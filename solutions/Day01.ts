@@ -22,7 +22,7 @@ async function run(): Promise<void> {
 
       return res;
     }, -1);
-
+  
   console.log("part 1 result is", p1);
 
   // PART 2
