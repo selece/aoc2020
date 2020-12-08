@@ -12,7 +12,9 @@
     "@types/node": "^14.14.10"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:day01": "npx tsc ./solutions/Day01.ts",
+    "run:day01": "node ./solutions/Day01.js"
   },
   "repository": {
     "type": "git",
