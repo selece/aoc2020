@@ -37,7 +37,7 @@ async function run(): Promise<void> {
             if (searchIndex + 1 < searchArray.length && !searchRes) {
               const subSearch = searchArray
                 .slice(searchIndex + 1)
-                .map((v) => ({ sum: v + current, value: v }))
+                .map((v) => ({ sum: v + searchCurrent, value: v }))
                 .filter(({ sum }) => sum + current === 2020)
                 .pop();
 
