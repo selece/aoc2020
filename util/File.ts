@@ -2,9 +2,11 @@ import { readFile } from "fs/promises";
 
 export default class File {
   private _path: string;
+  static DEFAULT_INPUT_PATH: string = "D:/dev/aoc2020/input/";
+  static DEFAULT_WINDOWS_NEWLINE: string = "\r\n";
 
-  constructor(path: string) {
-    this._path = path;
+  constructor(filename: string, path?: string) {
+    this._path = (path ? path : File.DEFAULT_INPUT_PATH).concat(filename);
   }
 
   public async contents(): Promise<string[]> {
@@ -13,7 +15,7 @@ export default class File {
 
     raw
       .toString()
-      .split("\r\n")
+      .split(File.DEFAULT_WINDOWS_NEWLINE)
       .forEach((s) => processed.push(s));
 
     return processed;
