@@ -13,8 +13,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:day01": "npx tsc ./solutions/Day01.ts",
-    "run:day01": "node ./solutions/Day01.js"
+    "build:d1": "npx tsc ./solutions/Day01.ts",
+    "run:d1": "node ./solutions/Day01.js"
   },
   "repository": {
     "type": "git",
