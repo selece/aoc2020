@@ -14,7 +14,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:d1": "npx tsc ./solutions/Day01.ts",
-    "run:d1": "node ./solutions/Day01.js"
+    "run:d1": "node ./solutions/Day01.js",
+    "build:d2": "npx tsc ./solutions/Day02.ts",
+    "run:d2": "node ./solutions/Day02.js"
   },
   "repository": {
     "type": "git",
